@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mabstyle.css">
+    <title>Mass</title>
+</head>
+
+<body>
+
+    <div id='menu'>
+        <nav>
+            <ul>
+                <img src="images/banner.png" width="10%"">
+                <li><a href='home.html'>Home</a></li>
+                <li class=" right"><a href='contact.html'>Contact Us</a></li>
+                <li class="right"><a href='declaration.html'>Declaration</a></li>
+
+                <li><a class='dropdown-arrow'>Calculators</a>
+                    <ul class='sub-menus'>
+                        <li><a href='biology.html'>Biology</a></li>
+                        <li><a href='Chemistry.html'>Chemistry</a></li>
+                        <li><a href='maths.html'>Maths</a></li>
+                        <li><a href='Physics.html'>Physics</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h2 id="welcome" style="margin-bottom: 100px;">Dr. Calculator!</h2>
+    </div>
+    <section class="info">
+        <h1>Cat Bmi</h1>
+    </section>
+
+    <section class="calc-container">
+        <section class="calculator" id="interest-calc">
+            <section>
+                <h3>Rib cage circumference <input type="number" placeholder="Type a number" max="999999" id="ribs">
+                </h3>
+                <hr>
+                <h3>Length of leg (cm) <input type="number" placeholder="Type a number" max="999999" id="leg">
+                </h3>
+                <hr>
+
+                <div id="answer">
+                    <h3>Answer</h3>
+
+                </div>
+                <button onclick="catbmi()" type="submit" name="submit" id="interestsub"
+                    class="sub-button">Submit</button>
+            </section>
+        </section>
+
+
+
+        <div class="lesson">
+            <h1>
+                Cat Bmi Calculator
+            </h1>
+            <H3>
+                How to calculate a cats bmi?
+            </H3>
+            <p>FBMI = Felines Body Mass Index</p>
+            <code>FBMI = (((rib cage/0.7062) - leg length )/0.9156) - leg length.</code>
+        </div>
+
+        <section>
+
+
+        </section>
+
+
+        <footer style="margin-left: -2.5%; width: 105%;">
+            <section class="ui stackable four column grid">
+                <div class="ui column">
+                    <img src="images/icon.png" alt="dr.calculator icon" width="30%" >
+                </div>
+                <div class="ui column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href='home.html'>Home</a></li>
+                        <li> <a href='contact.html'>Contact Us</a></li>
+                        <li><a href='declaration.html'>Declaration</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="ui column">
+                    <h3>Most used links</h3>
+                    <ul>
+                        <li><a href='Chemistry.html'>Chemistry</a></li>
+                        <li><a href='maths.html'>Maths</a></li>
+                        <li><a href='Physics.html'>Physics</a></li>
+                        <li><a href='biology.html'>Biology</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="ui column">
+                    <h3>Stay up to date with the newest calculators</h3>
+                    <form action="">
+                        <input type="email" id="email" name="email" placeholder="Enter email here">
+                        <input type="submit" id="submit" name="submit" value="Send">
+                    </form>
+                </div>
+            </section>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        <script src="js/Calc.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</body>
+
+</html>
