@@ -1,0 +1,55 @@
+
+
+.button {
+    -fx-font: 16px "Arial";
+     -fx-border-radius: 25px;
+        -fx-border-width: 1px;
+        -fx-border-color: #F4AA79;
+        -fx-background-color:#F4AA79;
+         -fx-background-radius: 25px;
+          -fx-text-fill:white;
+          font-weight:medium;
+          -fx-padding:8px;
+
+}
+.table-view{
+-fx-font: 11px "Arial";
+ -fx-border-radius: 0px 0px 10px 10px;
+  -fx-background-radius: 10px;
+  -fx-background-color:#546070;
+
+}
+
+.root{
+ -fx-background-color:#3F4958;
+
+}
+.text-field{
+-fx-background-color:#546070;
+ -fx-text-fill:white;
+  -fx-background-radius: 50px;
+
+}
+.label{
+ -fx-text-fill:white;
+}
+.combo-box{
+-fx-background-color:#546070;
+ -fx-text-fill:white;
+  -fx-background-radius: 50px;
+}
+
+.text-area .content{
+-fx-background-color:#546070;
+ -fx-text-fill:white;
+  -fx-background-radius: 10px;
+   -fx-border-width: 0px;
+          -fx-border-color: #152033;
+}
+.text-area {
+    -fx-fill: white;
+
+}`
+
+
+

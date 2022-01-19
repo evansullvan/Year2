@@ -1,0 +1,19 @@
+<object-stream>
+  <list>
+    <com.example.propertyshop.Property>
+      <id>2009706</id>
+      <description>first property</description>
+      <address>123 street</address>
+      <category>Room</category>
+      <location>Ireland</location>
+      <ber>A</ber>
+      <eircode>x91n7d6</eircode>
+      <price>99999.0</price>
+      <agentId>7645</agentId>
+      <status>Available</status>
+      <numberOfViews>0</numberOfViews>
+      <isAvailable>true</isAvailable>
+      <imageName>file:/C:/Users/evans/Pictures/EEEEEEEEEEEEEEEEEEEEEEEEE.jpg</imageName>
+    </com.example.propertyshop.Property>
+  </list>
+</object-stream>

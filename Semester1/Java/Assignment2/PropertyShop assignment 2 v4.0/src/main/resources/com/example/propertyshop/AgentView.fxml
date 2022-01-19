@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="759.0" prefWidth="774.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.propertyshop.registeredController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <Button mnemonicParsing="false" onAction="#logoutClicked" text="Logout">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+                <TableView fx:id="tblView" onMouseClicked="#clickItem" onMousePressed="#userClickedOnTable" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="LocationColumn" prefWidth="75.0" text="Location" />
+                        <TableColumn fx:id="descriptionColumn" prefWidth="207.0" text="Description" />
+                        <TableColumn fx:id="costColumn" prefWidth="75.0" text="Price" />
+                  <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="imageColumn" prefWidth="75.0" text="Image" />
+                    </columns>
+                </TableView>
+                <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button fx:id="detailedProductViewButton" disable="true" mnemonicParsing="false" onAction="#changeSceneToDetailedView" text="detailed view" />
+                        <ComboBox fx:id="searchCategory" onAction="#changedCategoryCombo" prefWidth="150.0" promptText="Category" />
+                        <ComboBox fx:id="searchlocation" onAction="#changedSubCategoryCombo" prefWidth="150.0" promptText="Location" />
+                    </buttons>
+                </ButtonBar>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="779.0" text="Add Property" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="449.0" prefWidth="766.0">
+               <children>
+                  <VBox prefHeight="449.0" prefWidth="393.0">
+                     <children>
+                        <Label fx:id="descriptionfeedbackArea" prefHeight="18.0" prefWidth="216.0" />
+                        <HBox prefHeight="88.0" prefWidth="356.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Description" />
+                              <TextArea fx:id="description" prefHeight="90.0" prefWidth="231.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="addressfeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Address" />
+                              <TextField fx:id="address" prefHeight="58.0" prefWidth="262.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="typefeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Category" />
+                              <ComboBox fx:id="category" prefHeight="48.0" prefWidth="253.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="locationfeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Location" />
+                              <ComboBox fx:id="colocation" prefHeight="72.0" prefWidth="258.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="berfeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="BER" />
+                              <TextField fx:id="ber" prefHeight="58.0" prefWidth="262.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="449.0" prefWidth="393.0">
+                     <children>
+                        <Label fx:id="eircodefeedbackArea" />
+                        <HBox prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Eircode" />
+                              <TextField fx:id="eircode" prefHeight="58.0" prefWidth="262.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="costfeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Price" />
+                              <TextField fx:id="cost" prefHeight="58.0" prefWidth="262.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="agentidfeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Agent Email" />
+                              <TextField fx:id="agentid" prefHeight="58.0" prefWidth="262.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="availablefeedbackArea" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Availablitity" />
+                              <ComboBox fx:id="available" prefHeight="63.0" prefWidth="264.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label prefHeight="18.0" prefWidth="323.0" />
+                        <HBox layoutX="10.0" layoutY="280.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="134.0" text="Add image" />
+                              <Button fx:id="addimage" mnemonicParsing="false" onAction="#selectImageButtonPressed" prefHeight="38.0" prefWidth="245.0" text="Add" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0">
+                           <children>
+                            
+                              <Button mnemonicParsing="false" onAction="#onCreateButtonClick" text="Add property" />
+                              <Button fx:id="deletebutton" disable="true" mnemonicParsing="false" onAction="#removeProperty" text="Delete" />
+                              <Button fx:id="updateproperty" disable="true" mnemonicParsing="false" onAction="#updateProperty" text="Update" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
