@@ -6,3 +6,4 @@ This was a group project , the task was to create an educational wbsite that stu
 2. Watch the calculator go to work
 3. Receive the correct answer in 0.006584 seconds
 ## Contributing
+1. [Fellow classmate](https://github.com/hacoeur)
